@@ -1,4 +1,4 @@
-package workingWithHandlemultipleWindows;
+package workingWithMultipleWindows;
 
 import java.util.Set;
 
