@@ -2,20 +2,29 @@ package workingWithExternalDatas;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Properties;
 
-import org.apache.poi.EncryptedDocumentException;
-import org.apache.poi.sl.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 
 public class SimpleData {
-
-	
-	public String readStringData(int row,int col) throws EncryptedDocumentException, IOException {
-		FileInputStream fis=new FileInputStream("./testData/data.xlsx");
-		Workbook workbook = WorkbookFactory.create(fis);
-		Sheet sheet = (Sheet) workbook.getSheet("Sheet1");
-		return ((org.apache.poi.ss.usermodel.Sheet) sheet).getRow(row).getCell(col).toString();
+	public static void main(String[] args) throws IOException   {
 		
+		FileInputStream fis =new FileInputStream("./testData/data.properties");
+		
+		Properties prop=new Properties();
+		prop.load(fis);
+		
+		prop.get(prop);
+		
+		Object key = prop.get("chromeKey");
+		Object value = prop.get("chromeValue");
+		System.out.println(key);
+		System.out.println(value);
+		
+		System.setProperty(prop.getProperty("chromeKey"),prop.getProperty("chromeValue"));
+		WebDriver driver=new ChromeDriver();
+		driver.get(prop.getProperty("url"));
 	}
 }

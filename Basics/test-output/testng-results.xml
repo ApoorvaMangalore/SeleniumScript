@@ -1,93 +1,197 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-25T15:35:14 IST" name="Default suite" finished-at="2023-09-25T15:35:14 IST" duration-ms="193">
+  <suite started-at="2023-09-26T23:38:50 IST" name="Default suite" finished-at="2023-09-26T23:39:24 IST" duration-ms="33804">
     <groups>
     </groups>
-    <test started-at="2023-09-25T15:35:14 IST" name="Default test" finished-at="2023-09-25T15:35:14 IST" duration-ms="193">
-      <class name="understandingAboutTestNg.Datademo">
-        <test-method signature="test(java.lang.String,java.lang.String)[pri:0, instance:understandingAboutTestNg.Datademo@54c5a2ff]" started-at="2023-09-25T15:35:14 IST" name="test" data-provider="dataDemo" finished-at="2023-09-25T15:35:14 IST" duration-ms="17" status="PASS">
+    <test started-at="2023-09-26T23:38:50 IST" name="Default test" finished-at="2023-09-26T23:39:24 IST" duration-ms="33804">
+      <class name="workingWithExternalDatas.RegisterForDemo">
+        <test-method signature="registerUser([Ljava.lang.String;)[pri:0, instance:workingWithExternalDatas.RegisterForDemo@1a6d8329]" started-at="2023-09-26T23:38:51 IST" name="registerUser" data-provider="registerData" finished-at="2023-09-26T23:38:57 IST" duration-ms="6079" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Sirsi]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Siddapur]]>
+                <![CDATA[[Ljava.lang.String;@7ad1caa2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method signature="test(java.lang.String,java.lang.String)[pri:0, instance:understandingAboutTestNg.Datademo@54c5a2ff]" started-at="2023-09-25T15:35:14 IST" name="test" data-provider="dataDemo" finished-at="2023-09-25T15:35:14 IST" duration-ms="5" status="PASS">
+        </test-method> <!-- registerUser -->
+        <test-method signature="registerUser([Ljava.lang.String;)[pri:0, instance:workingWithExternalDatas.RegisterForDemo@1a6d8329]" started-at="2023-09-26T23:38:57 IST" name="registerUser" data-provider="registerData" finished-at="2023-09-26T23:39:06 IST" duration-ms="8896" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Kumata]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Karwar]]>
+                <![CDATA[[Ljava.lang.String;@4fa822ad]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method signature="test(java.lang.String,java.lang.String)[pri:0, instance:understandingAboutTestNg.Datademo@54c5a2ff]" started-at="2023-09-25T15:35:14 IST" name="test" data-provider="dataDemo" finished-at="2023-09-25T15:35:14 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- registerUser -->
+        <test-method signature="registerUser([Ljava.lang.String;)[pri:0, instance:workingWithExternalDatas.RegisterForDemo@1a6d8329]" started-at="2023-09-26T23:39:06 IST" name="registerUser" data-provider="registerData" finished-at="2023-09-26T23:39:12 IST" duration-ms="5865" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Gokarna]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Mundgod]]>
+                <![CDATA[[Ljava.lang.String;@6b6b3572]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method signature="test(java.lang.String,java.lang.String)[pri:0, instance:understandingAboutTestNg.Datademo@54c5a2ff]" started-at="2023-09-25T15:35:14 IST" name="test" data-provider="dataDemo" finished-at="2023-09-25T15:35:14 IST" duration-ms="4" status="PASS">
+        </test-method> <!-- registerUser -->
+        <test-method signature="registerUser([Ljava.lang.String;)[pri:0, instance:workingWithExternalDatas.RegisterForDemo@1a6d8329]" started-at="2023-09-26T23:39:12 IST" name="registerUser" data-provider="registerData" finished-at="2023-09-26T23:39:13 IST" duration-ms="1283" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Ankola]]>
+                <![CDATA[[Ljava.lang.String;@2149594a]]>
               </value>
             </param>
-            <param index="1">
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created
+from no such execution context: loader has changed while resolving nodes
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'TYSS-APOORVA', ip: '192.168.1.100', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: GetHandleVerifier [0x00007FF63F7A52A2+57122]
+(No symbol) [0x00007FF63F71EA92]
+(No symbol) [0x00007FF63F5EE3AB]
+(No symbol) [0x00007FF63F5F190C]
+(No symbol) [0x00007FF63F5F3D2F]
+(No symbol) [0x00007FF63F5F3E20]
+(No symbol) [0x00007FF63F64FF28]
+(No symbol) [0x00007FF63F64E5B0]
+(No symbol) [0x00007FF63F646DB3]
+(No symbol) [0x00007FF63F61D2B1]
+(No symbol) [0x00007FF63F61E494]
+GetHandleVerifier [0x00007FF63FA4EF82+2849794]
+GetHandleVerifier [0x00007FF63FAA1D24+3189156]
+GetHandleVerifier [0x00007FF63FA9ACAF+3160367]
+GetHandleVerifier [0x00007FF63F836D06+653702]
+(No symbol) [0x00007FF63F72A208]
+(No symbol) [0x00007FF63F7262C4]
+(No symbol) [0x00007FF63F7263F6]
+(No symbol) [0x00007FF63F7167A3]
+BaseThreadInitThunk [0x00007FFE751A257D+29]
+RtlUserThreadStart [0x00007FFE769EAA68+40]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created
+from no such execution context: loader has changed while resolving nodes
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'TYSS-APOORVA', ip: '192.168.1.100', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: GetHandleVerifier [0x00007FF63F7A52A2+57122]
+(No symbol) [0x00007FF63F71EA92]
+(No symbol) [0x00007FF63F5EE3AB]
+(No symbol) [0x00007FF63F5F190C]
+(No symbol) [0x00007FF63F5F3D2F]
+(No symbol) [0x00007FF63F5F3E20]
+(No symbol) [0x00007FF63F64FF28]
+(No symbol) [0x00007FF63F64E5B0]
+(No symbol) [0x00007FF63F646DB3]
+(No symbol) [0x00007FF63F61D2B1]
+(No symbol) [0x00007FF63F61E494]
+GetHandleVerifier [0x00007FF63FA4EF82+2849794]
+GetHandleVerifier [0x00007FF63FAA1D24+3189156]
+GetHandleVerifier [0x00007FF63FA9ACAF+3160367]
+GetHandleVerifier [0x00007FF63F836D06+653702]
+(No symbol) [0x00007FF63F72A208]
+(No symbol) [0x00007FF63F7262C4]
+(No symbol) [0x00007FF63F7263F6]
+(No symbol) [0x00007FF63F7167A3]
+BaseThreadInitThunk [0x00007FFE751A257D+29]
+RtlUserThreadStart [0x00007FFE769EAA68+40]
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at workingWithExternalDatas.RegisterForDemo.registerUser(RegisterForDemo.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerUser -->
+        <test-method signature="registerUser([Ljava.lang.String;)[pri:0, instance:workingWithExternalDatas.RegisterForDemo@1a6d8329]" started-at="2023-09-26T23:39:13 IST" name="registerUser" data-provider="registerData" finished-at="2023-09-26T23:39:18 IST" duration-ms="5409" status="PASS">
+          <params>
+            <param index="0">
               <value>
-                <![CDATA[Sorba]]>
+                <![CDATA[[Ljava.lang.String;@65d8dff8]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method signature="test(java.lang.String,java.lang.String)[pri:0, instance:understandingAboutTestNg.Datademo@54c5a2ff]" started-at="2023-09-25T15:35:14 IST" name="test" data-provider="dataDemo" finished-at="2023-09-25T15:35:14 IST" duration-ms="7" status="PASS">
+        </test-method> <!-- registerUser -->
+        <test-method signature="registerUser([Ljava.lang.String;)[pri:0, instance:workingWithExternalDatas.RegisterForDemo@1a6d8329]" started-at="2023-09-26T23:39:18 IST" name="registerUser" data-provider="registerData" finished-at="2023-09-26T23:39:24 IST" duration-ms="5297" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Yallapur]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Honnavar]]>
+                <![CDATA[[Ljava.lang.String;@597f0937]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- understandingAboutTestNg.Datademo -->
+        </test-method> <!-- registerUser -->
+      </class> <!-- workingWithExternalDatas.RegisterForDemo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
