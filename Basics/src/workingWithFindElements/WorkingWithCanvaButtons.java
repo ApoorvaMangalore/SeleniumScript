@@ -23,7 +23,7 @@ public class WorkingWithCanvaButtons {
 		for (WebElement button : buttons) {
 			System.out.println(button.getText());
 		}
-
+		driver.quit();
 	}
 
 }

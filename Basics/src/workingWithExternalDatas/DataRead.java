@@ -4,7 +4,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
-import org.apache.poi.sl.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.By;
@@ -18,7 +18,7 @@ public class DataRead {
 	public String[][] sendData() throws EncryptedDocumentException, IOException {
 		FileInputStream fis = new FileInputStream("./testData/TestData.xlsx");
 		Workbook workbook = WorkbookFactory.create(fis);
-		org.apache.poi.ss.usermodel.Sheet sheet = workbook.getSheet("data");
+	    Sheet sheet = workbook.getSheet("data");
 		int rownum = sheet.getPhysicalNumberOfRows();
 		int colNum = sheet.getRow(0).getPhysicalNumberOfCells();
 
@@ -35,7 +35,7 @@ public class DataRead {
 	@Test(dataProvider = "sendData")
 	public void run(String[] cred) throws InterruptedException {
 
-		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 

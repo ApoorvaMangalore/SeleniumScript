@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class PoopUps {
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
 
 		ChromeOptions options = new ChromeOptions();
 		options.setAcceptInsecureCerts(true);
@@ -16,7 +16,7 @@ public class PoopUps {
 
 		driver.get("https://expired.badssl.com/");
 
-		 driver.quit();
+		 //driver.quit();
 	}
 
 }

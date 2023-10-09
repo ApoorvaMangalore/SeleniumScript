@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-
+//Go to the (https://www.foundit.in/) select skill set and select java.
 public class MonsterJobs {
 
 	public static void main(String[] args) throws InterruptedException {

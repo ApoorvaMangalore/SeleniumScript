@@ -10,50 +10,51 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import understandingAboutTestNg.DependsOnMethod;
-
 public class sample {
 
-	@BeforeSuite
-	public void beforeSuite() {
-		System.out.println("data base connection is started");
-		System.out.println("report formtion start");
-	}
-	@BeforeClass
-	public void beforeClass() {
-		System.out.println("to open the browser");
-		
-	}
-	@AfterClass
-	public void afterClass() {
-		System.out.println("to quit the browser");
+	@Test
+	public void login1() {
+		System.out.println("I am  test ");
 	}
 
 	@Test
 	public void login() {
-		System.out.println("login");
+		System.out.println("I am  test2 ");
 	}
-	@Test
-	public void logout() {
-		System.out.println("logout");
+
+	@BeforeSuite
+	public void beforesuite() {
+		System.out.println("Data base connection");
 	}
 
 	@AfterSuite
-	public void afterSuite() {
-		System.out.println("data base connection is Stoped");
+	public void aftersuite() {
+		System.out.println("close the DB");
 	}
 
-	@BeforeMethod
-	public void beforemethod() {
-		System.out.println("i am before  menthod");
-	}
-	
-	@BeforeTest
-	public void beforetest() {
-		System.out.println(" iam before test");
-	}
 	@AfterTest
-	public void aftertest() {
-		System.out.println(" i am after test");
+	public void afterTest() {
+		System.out.println("i am after test");
+	}
+
+	@BeforeTest
+	public void beforeTest() {
+		System.out.println("i am before test");
+	}
+	@BeforeClass
+	public void beforeClass() {
+		System.out.println("i am before class");
+	}
+	@AfterClass
+	public void afterClass() {
+		System.out.println("i am after class");
+	}
+	@BeforeMethod
+	public void beforeMethod() {
+		System.out.println("i am before method");
+	}
+	@AfterMethod
+	public void afterMethod() {
+		System.out.println("i am after method");
 	}
 }

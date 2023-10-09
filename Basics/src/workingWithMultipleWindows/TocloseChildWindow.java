@@ -15,7 +15,7 @@ public class TocloseChildWindow {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
-		driver.get("file:///C:/Users/user/Downloads/MultipleWindow_20221207_153133525.html");
+		driver.get("file:///C:/Users/user/Downloads/Selenium/Selenium(PPT)/PracticePage/MultipleWindow.html");
 		driver.findElement(By.xpath("//input[@value='Open Food Sites']")).click();
 		
 		String needToClose="Multiple popups";

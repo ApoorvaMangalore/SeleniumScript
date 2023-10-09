@@ -29,6 +29,7 @@ public class ClickOnSocialMediaLink {
 		driver.findElement(By.xpath("//a[@class='btn btn-social-icon btn-google']")).click();
 		System.out.println(driver.getCurrentUrl());
 		driver.navigate().back();
+		driver.quit();
 	}
 
 }

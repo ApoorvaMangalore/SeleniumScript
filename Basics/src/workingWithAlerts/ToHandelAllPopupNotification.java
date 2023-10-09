@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class ToHandelAllPopupNotification {
 
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
 
 		options.addArguments("--disable-notifications");

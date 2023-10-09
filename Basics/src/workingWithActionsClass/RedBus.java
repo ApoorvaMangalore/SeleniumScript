@@ -11,9 +11,9 @@ public class RedBus {
 
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
-		//ChromeOptions options = new ChromeOptions();//dont change the line
-		//options.addArguments("--disable-notifications");
-		WebDriver driver = new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();//dont change the line
+		options.addArguments("--disable-notifications");
+		WebDriver driver = new ChromeDriver(options);
 		
 		driver.manage().window().maximize();
 

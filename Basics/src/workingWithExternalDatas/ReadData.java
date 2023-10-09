@@ -42,7 +42,7 @@ public class ReadData {
 			for (int c = 0; c < clmCount; c++) {
 				XSSFCell cell = row.getCell(c);
 
-				System.out.println(row);
+				//System.out.println(row);
 				System.out.println(cell);
 
 			}

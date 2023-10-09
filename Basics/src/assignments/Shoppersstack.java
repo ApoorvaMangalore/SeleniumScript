@@ -29,8 +29,8 @@ public class Shoppersstack {
 		driver.findElement(By.id("Confirm Password")).sendKeys("appu!APPU@123");
 		driver.findElement(By.id("Terms and Conditions")).click();
 		driver.findElement(By.xpath("//button[text()='Register']")).click();
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[name()='svg' and @ aria-hidden='true'])[1]")));
-		driver.findElement(By.xpath("(//*[name()='svg' and @ aria-hidden='true'])[1]")).click();
+		//wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[name()='svg' and @ aria-hidden='true'])[1]")));
+		//driver.findElement(By.xpath("(//*[name()='svg' and @ aria-hidden='true'])[1]")).click();
 		
 		//driver.quit();
 	}

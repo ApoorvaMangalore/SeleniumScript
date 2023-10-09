@@ -15,7 +15,7 @@ public class AddParticularProdToCart {
 		driver.manage().window().maximize();
 		driver.get("https://demowebshop.tricentis.com/");
 		driver.findElement(By.partialLinkText("Books")).click();
-		driver.findElement(By.xpath("//img[contains(@alt,\"Picture of Comp\")]/../../..//input[@value='Add to cart']"))
+		driver.findElement(By.xpath("//img[contains(@alt,'Picture of Comp')]/../../..//input[@value='Add to cart']"))
 				.click();
 
 		driver.findElement(By.xpath("//span[text()='Shopping cart']")).click();
@@ -28,7 +28,8 @@ public class AddParticularProdToCart {
 		WebElement qty = driver.findElement(By.xpath("(//input[@type='text'])[2]"));
 		qty.clear();
 		qty.sendKeys("0");
-		driver.quit();
+		Thread.sleep(3000);
+		//driver.quit();
 
 	}
 

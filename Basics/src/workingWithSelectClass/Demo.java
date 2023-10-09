@@ -34,7 +34,7 @@ public class Demo {
 		sel.selectByVisibleText("Nissan");
 		Thread.sleep(2000);
 
-		//sel.deselectByVisibleText("Toyota");//exception
+		sel.deselectByVisibleText("Toyota");//exception
 		Thread.sleep(2000);
 
 	}

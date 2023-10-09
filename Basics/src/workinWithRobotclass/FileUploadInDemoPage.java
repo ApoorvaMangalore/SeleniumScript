@@ -7,6 +7,7 @@ import java.awt.event.KeyEvent;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
@@ -20,21 +21,24 @@ public class FileUploadInDemoPage {
 		driver.get("file:///C:/Users/user/Downloads/Selenium/Selenium(PPT)/PracticePage/demo.html");
 		Thread.sleep(3000);
 		Actions a = new Actions(driver);
-		a.click(driver.findElement(By.id("resume"))).perform();
-		Robot robot= new Robot();
-		
+		WebElement resume = driver.findElement(By.id("resume"));
+		a.click(resume).perform();
+		Thread.sleep(3000);
+		Robot robot = new Robot();
+
 		robot.keyPress(KeyEvent.VK_A);
-		
+
 		robot.keyPress(KeyEvent.VK_TAB);
-		
+
 		robot.keyPress(KeyEvent.VK_TAB);
-		
+
 		robot.keyPress(KeyEvent.VK_ENTER);
 		
-		
+
 		robot.keyRelease(KeyEvent.VK_A);
 		robot.keyRelease(KeyEvent.VK_TAB);
 		robot.keyRelease(KeyEvent.VK_TAB);
 		robot.keyRelease(KeyEvent.VK_ENTER);
+
 	}
 }

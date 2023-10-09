@@ -6,20 +6,17 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class DoubleClickGuru99 {
-
+public class ClickAndHold {
 	public static void main(String[] args) {
+
 		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://demo.guru99.com/test/simple_context_menu.html");
-		Actions actions = new Actions(driver);
+		Actions action = new Actions(driver);
 
-		WebElement doubleclick = driver.findElement(By.xpath("//button[text()='Double-Click Me To See Alert']"));
+		driver.get("https://selenium08.blogspot.com/2020/01/click-and-hold.html");
+		WebElement c = driver.findElement(By.name("C"));
 
-		actions.doubleClick(doubleclick).build().perform();
-		driver.quit();
-
+		action.clickAndHold(c).moveToElement(c).perform();
 	}
-
 }

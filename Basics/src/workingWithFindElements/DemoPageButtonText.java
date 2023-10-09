@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class DemoPageButtonText {
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 

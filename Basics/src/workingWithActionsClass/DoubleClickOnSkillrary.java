@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-
+// open (https://demoapp.skillrary.com/product.php?product=selenium-training) 4 time click on + button and capture how many time you have clicked on button.
 public class DoubleClickOnSkillrary {
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");

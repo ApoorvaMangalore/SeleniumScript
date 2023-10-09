@@ -16,16 +16,20 @@ public class Alerts {
 		driver.manage().window().maximize();
 		
 		driver.get("https://the-internet.herokuapp.com/javascript_alerts");
-		
-		WebElement alert1 = driver.findElement(By.xpath("//button[text()='Click for JS Alert']"));
-		alert1.click();
-		
-		driver.switchTo().alert().accept();
+		/*
+		 * WebElement alert1 =
+		 * driver.findElement(By.xpath("//button[text()='Click for JS Alert']"));
+		 * alert1.click();
+		 * 
+		 * driver.switchTo().alert().accept();
+		 */
 		WebElement jspromt = driver.findElement(By.xpath("//button[text()='Click for JS Prompt']"));
+		jspromt.click();
 		Alert alert = driver.switchTo().alert();
+		//System.out.println(jspromt.getText());
 		alert.sendKeys("apoorva");
-		alert.accept();
-		driver.quit();
+		
+		
 	}
 
 }

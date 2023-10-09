@@ -3,11 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="workingWithExternalDatas.RegisterForDemo">
+      <class name="workingWithUnitTestingTool.AddproductTocart">
         <methods>
-          <include name="registerUser" invocation-numbers="3"/>
+          <include name="login"/>
+          <include name="browsersetup"/>
+          <include name="tearDown"/>
+          <include name="dataBaseClose"/>
+          <include name="dataBaseStart"/>
+          <include name="logout"/>
+          <include name="addProductTocart"/>
         </methods>
-      </class> <!-- workingWithExternalDatas.RegisterForDemo -->
+      </class> <!-- workingWithUnitTestingTool.AddproductTocart -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

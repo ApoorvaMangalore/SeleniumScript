@@ -9,26 +9,22 @@ import org.openqa.selenium.support.ui.Select;
 public class SelectClassViewAs {
 
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver","./drivers/chromedriver.exe");
-		WebDriver driver=new ChromeDriver();
+		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		
+
 		driver.get("https://demowebshop.tricentis.com/");
 		driver.findElement(By.partialLinkText("Books")).click();
+
+		WebElement dropdown = driver.findElement(By.id("products-orderby"));
 		
-		WebElement selector = driver.findElement(By.id("products-orderby"));
-		
-		Select sel=new Select(selector);
-	
-		//sel.selectByValue("https://demowebshop.tricentis.com/books?orderby=15");
-		//Thread.sleep(2000);
-		sel.selectByVisibleText("Name: A to Z");
-		
-		Thread.sleep(2000);
-		driver.navigate().back();//staleelement exception due to url.
-		sel.selectByVisibleText("Name: Z to A");
-		driver.quit();
-		
+
+		Select select = new Select(dropdown);
+
+		select.selectByIndex(0);
+		Thread.sleep(7000);
+		select.selectByVisibleText("Price: High to Low");
+
 	}
 
 }

@@ -6,8 +6,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class WorkingWithXpathDemo1 {
 
-
-
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
@@ -15,7 +13,7 @@ public class WorkingWithXpathDemo1 {
 
 		driver.manage().window().maximize();
 		driver.get("file:///C:/Users/user/Downloads/Selenium/xpath1.html");
-		
+
 		driver.findElement(By.xpath("(//input)[1]")).sendKeys("Apoorva");
 		driver.findElement(By.xpath("(//input)[2]")).sendKeys("Mangalore");
 		driver.findElement(By.xpath("(//input)[3]")).sendKeys("TestYantra");

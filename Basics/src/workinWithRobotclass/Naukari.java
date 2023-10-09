@@ -15,36 +15,41 @@ public class Naukari {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		Robot robot = new Robot();
-		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		driver.get("https://www.naukri.com/");
 		driver.findElement(By.id("register_Layer")).click();
 		driver.findElement(By.xpath("//button[text()='Upload Resume']")).click();
-		Thread.sleep(2000);
-		/*
-		 * robot.keyPress(KeyEvent.VK_A); robot.keyPress(KeyEvent.VK_P);
-		 * robot.keyPress(KeyEvent.VK_P); robot.keyPress(KeyEvent.VK_U);
-		 * robot.keyPress(KeyEvent.VK_TAB); robot.keyPress(KeyEvent.VK_TAB);
-		 * robot.keyPress(KeyEvent.VK_ENTER);
-		 * 
-		 * robot.keyRelease(KeyEvent.VK_A); robot.keyRelease(KeyEvent.VK_P);
-		 * robot.keyRelease(KeyEvent.VK_P); robot.keyRelease(KeyEvent.VK_U);
-		 * robot.keyRelease(KeyEvent.VK_TAB); robot.keyRelease(KeyEvent.VK_TAB);
-		 * robot.keyRelease(KeyEvent.VK_ENTER);
-		 */
-         robot.keyPress(KeyEvent.VK_A);
-		
+		//Thread.sleep(2000);
+
+		robot.keyPress(KeyEvent.VK_A);
+		robot.keyPress(KeyEvent.VK_P);
+		robot.keyPress(KeyEvent.VK_P);
+		robot.keyPress(KeyEvent.VK_U);
 		robot.keyPress(KeyEvent.VK_TAB);
-		
 		robot.keyPress(KeyEvent.VK_TAB);
-		
 		robot.keyPress(KeyEvent.VK_ENTER);
-		
-		
+
 		robot.keyRelease(KeyEvent.VK_A);
+		robot.keyRelease(KeyEvent.VK_P);
+		robot.keyRelease(KeyEvent.VK_P);
+		robot.keyRelease(KeyEvent.VK_U);
 		robot.keyRelease(KeyEvent.VK_TAB);
 		robot.keyRelease(KeyEvent.VK_TAB);
 		robot.keyRelease(KeyEvent.VK_ENTER);
-		
+
+		/*
+		 * robot.keyPress(KeyEvent.VK_A);
+		 * 
+		 * robot.keyPress(KeyEvent.VK_TAB);
+		 * 
+		 * robot.keyPress(KeyEvent.VK_TAB);
+		 * 
+		 * robot.keyPress(KeyEvent.VK_ENTER);
+		 * 
+		 * 
+		 * robot.keyRelease(KeyEvent.VK_A); robot.keyRelease(KeyEvent.VK_TAB);
+		 * robot.keyRelease(KeyEvent.VK_TAB); robot.keyRelease(KeyEvent.VK_ENTER);
+		 */
 
 	}
 }

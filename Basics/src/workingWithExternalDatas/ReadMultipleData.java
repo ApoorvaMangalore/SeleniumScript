@@ -37,8 +37,8 @@ public class ReadMultipleData {
 			driver.findElement(By.id("gender-male")).click();
 		}
 
-		driver.findElement(By.id("FirstName")).sendKeys(data[1]);
-		driver.findElement(By.id("LastName")).sendKeys(data[2]);
+		driver.findElement(By.id("FirstName")).sendKeys(workbook.getSheet("regdata").getRow(1).getCell(1).toString());
+		driver.findElement(By.id("LastName")).sendKeys(workbook.getSheet("regdata").getRow(2).getCell(1).toString());
 		driver.findElement(By.id("Email")).sendKeys(data[3]);
 		driver.findElement(By.id("Password")).sendKeys(data[4]);
 		driver.findElement(By.id("ConfirmPassword")).sendKeys(data[5]);

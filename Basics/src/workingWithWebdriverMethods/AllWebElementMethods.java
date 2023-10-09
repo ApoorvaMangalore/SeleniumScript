@@ -39,14 +39,14 @@ public class AllWebElementMethods {
 		System.out.println(firstname.getClass().getSimpleName());
 		
 		
-		driver.quit();
 		
-		/*
-		 * WebElement loginbutton = driver.findElement(By.id("openIdLogin"));
-		 * loginbutton.click(); System.out.println(loginbutton.isEnabled());//f
-		 * System.out.println(loginbutton.isDisplayed());//t
-		 * System.out.println(loginbutton.isSelected());//f
-		 */
+		
+		
+		  WebElement loginbutton = driver.findElement(By.id("openIdLogin"));
+		  loginbutton.click(); System.out.println(loginbutton.isEnabled());//f
+		  System.out.println(loginbutton.isDisplayed());//t
+		  System.out.println(loginbutton.isSelected());//f
+		 
 	}
 
 }

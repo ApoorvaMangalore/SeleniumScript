@@ -22,7 +22,7 @@ public class meesho {
 				.click();
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//img[@alt='Fancy Jars & Containers']")).click();
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
 		driver.findElement(By.xpath("//span[text()='Add to Cart']")).click();
 		//driver.quit();
 	}
