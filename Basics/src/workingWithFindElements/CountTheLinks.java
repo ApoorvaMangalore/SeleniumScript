@@ -20,6 +20,7 @@ public class CountTheLinks {
 		for (WebElement element : title) {
 			System.out.println(element.getText());
 			count++;
+			
 		}
 		System.out.println(count);
 	}

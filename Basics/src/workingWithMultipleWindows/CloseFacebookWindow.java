@@ -12,7 +12,7 @@ public class CloseFacebookWindow {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -35,7 +35,5 @@ public class CloseFacebookWindow {
 			System.out.println(driver.getTitle());
 			driver.close();
 		}
-
 	}
-
 }

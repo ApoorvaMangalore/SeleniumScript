@@ -10,7 +10,7 @@ public class Classname {
 		System.setProperty("webdriver.chrome.driver","./driver/chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://demowebshop.tricentis.com/register");
+		driver.get("https://demowebshop.tricentis.com");
 		
 		driver.findElement(By.className("ico-register")).click();
 		Thread.sleep(2000);

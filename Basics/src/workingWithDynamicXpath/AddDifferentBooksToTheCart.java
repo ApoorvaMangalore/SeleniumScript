@@ -13,9 +13,9 @@ public class AddDifferentBooksToTheCart {
 
 		driver.manage().window().maximize();
 		driver.get("https://demowebshop.tricentis.com/");
-		
+
 		driver.findElement(By.partialLinkText("BOOKS")).click();
-		
+
 		driver.findElement(By.xpath("//img[@alt='Picture of Fiction']//../../..//input[@value='Add to cart']")).click();
 
 	}

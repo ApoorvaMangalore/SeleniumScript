@@ -14,7 +14,7 @@ public class WorkingWithTimeouts {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("http://omayo.blogspot.com/");
-		//Thread.sleep(2000);
+		//Thread.sleep(4000);
 		driver.quit();
 	}
 

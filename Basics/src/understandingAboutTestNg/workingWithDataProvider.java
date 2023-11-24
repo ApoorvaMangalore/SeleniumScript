@@ -22,6 +22,8 @@ public class workingWithDataProvider {
 		driver.findElement(By.id("Password")).sendKeys(password);
 		driver.findElement(By.id("ConfirmPassword")).sendKeys(confirmPassword);
 		driver.findElement(By.id("register-button")).click();
+		driver.quit();
+		
 	}
 
 	@DataProvider(name = "data")

@@ -9,7 +9,7 @@ public class Launchfirefox {
 
 	public static void main(String[] args) {
 		System.setProperty("webdriver.gecko.driver", "./drivers/geckodriver.exe");
-		WebDriver driver = new FirefoxDriver();
+		FirefoxDriver driver = new FirefoxDriver();
 	}
 
 }

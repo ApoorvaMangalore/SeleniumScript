@@ -10,9 +10,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
-
 public class BaseClass {
-	public WebDriver driver;//make it static
+	public WebDriver driver;// make it static
 
 	String emailId = "apoorva.c@testyantra.com";
 	String password = "su8WX*xH7YfC2";
@@ -53,6 +52,7 @@ public class BaseClass {
 		Reporter.log("Data base coonection is started", true);
 		Reporter.log("Report genration started", true);
 	}
+
 //To close connection for database(JDBC)java data base connection or repot
 	@AfterSuite
 	public void dataBaseClose() {

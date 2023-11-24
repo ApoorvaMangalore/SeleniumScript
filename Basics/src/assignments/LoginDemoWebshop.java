@@ -11,14 +11,12 @@ public class LoginDemoWebshop {
 		driver.manage().window().maximize();
 		driver.get("https://demowebshop.tricentis.com/login");
 		driver.findElement(By.id("Email")).sendKeys("acm@123.com");
-		
-		
+
 		driver.findElement(By.id("Password")).sendKeys("12345");
 		driver.findElement(By.id("RememberMe")).click();
 		driver.findElement(By.linkText("Forgot password?")).click();
 		driver.findElement(By.id("Email")).sendKeys("acm@123.com");
 		driver.findElement(By.name("send-email")).click();
-		
 
 	}
 

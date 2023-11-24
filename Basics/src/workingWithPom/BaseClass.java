@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeMethod;
 
 public class BaseClass {
 
-	WebDriver driver = null;
+	WebDriver driver;
 
 	@BeforeMethod
 	public void lunchBrowser() {

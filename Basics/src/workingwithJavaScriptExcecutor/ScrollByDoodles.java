@@ -18,17 +18,17 @@ public class ScrollByDoodles {
 		driver.get("https://www.google.com/doodles");
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
 
-		//driver.findElement(By.xpath("(//li[@class='doodle-thumb hide-card'])[4]")).click();
+		// driver.findElement(By.xpath("(//li[@class='doodle-thumb
+		// hide-card'])[4]")).click();
 
-		
-		  for (;;) { 
-			  try {
-		  driver.findElement(By.linkText("Celebrating Pani Puri")).click();
-		  break; }
-		  catch (Exception e) { 
-			  jse.executeScript("window.scrollBy(0, 250)"); } }
-		  
+		for (;;) {
+			try {
+				driver.findElement(By.linkText("Celebrating Pani Puri")).click();
+				break;
+			} catch (Exception e) {
+				jse.executeScript("window.scrollBy(0, 250)");
+			}
+		}
 
 	}
-
 }

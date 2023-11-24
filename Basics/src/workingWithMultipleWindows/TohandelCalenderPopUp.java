@@ -9,16 +9,13 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 
 public class TohandelCalenderPopUp {
-	
-
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
-
 		ChromeOptions option = new ChromeOptions();
-		
 		option.addArguments("--disable-notifications");
 		WebDriver driver = new ChromeDriver(option);
 		driver.manage().window().maximize();
+		
 		driver.get("https://in.via.com");
 		String date = "21";
 		driver.findElement(By.id("departure")).click();

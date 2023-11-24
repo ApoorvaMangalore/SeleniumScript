@@ -6,23 +6,23 @@ public class WorkingWithPriorityattribute {
 	//defaul value is zero
 	final int a = 4;
 
-	@Test(priority = a)
-	public void fail() {
-		System.out.println("i am fail");
+	@Test(priority = 4)
+	public void registration() {
+		System.out.println("i am registration");
 	}
 
-	@Test(priority = 0)
-	public void testcase() {
-		System.out.println("i am testcase");
+	@Test(priority = -2)
+	public void login() {
+		System.out.println("i am login");
 	}
 
-	@Test(priority = -1)
-	public void run() {
-		System.out.println("i am run");
+	@Test(priority = 3)
+	public void addProd() {
+		System.out.println("i amaddProd");
 	}
 
 	@Test(priority = 4)
-	public void pass() {
-		System.out.println("i am pass");
+	public void logout() {
+		System.out.println("i amlogout");
 	}
 }

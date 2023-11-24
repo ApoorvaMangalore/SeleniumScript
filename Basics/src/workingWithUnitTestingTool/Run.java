@@ -1,7 +1,5 @@
 package workingWithUnitTestingTool;
 
-
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -11,11 +9,11 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class Run {
-	@Parameters({ "url", "browserName" })
-	@Test
-	public void browser(@Optional("https://www.hyundai.com/in/en")String url, String browserName) throws InterruptedException {
+	WebDriver driver;
 
-		WebDriver driver = null;
+	@Parameters({ "browserName","url" })
+	@Test
+	public void browser(String browserName,String url) throws InterruptedException {
 
 		if (browserName.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
@@ -23,7 +21,7 @@ public class Run {
 		} else if (browserName.equals("firefox")) {
 			System.setProperty("webdriver.gecko.driver", "./driver/geckodriver.exe");
 			driver = new FirefoxDriver();
-		} else if (browserName.equals("firefox")) {
+		} else if (browserName.equals("edge")) {
 			System.setProperty("webdriver.edge.driver", "./driver/edgedriver.exe");
 			driver = new EdgeDriver();
 		} else {
@@ -32,7 +30,6 @@ public class Run {
 		driver.manage().window().maximize();
 		driver.get(url);
 		Thread.sleep(4000);
-
 		driver.quit();
 	}
 }

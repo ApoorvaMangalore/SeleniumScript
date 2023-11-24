@@ -32,20 +32,36 @@ public class ReadData {
 		System.out.println(rowCount);
 		System.out.println(clmCount);
 
-		String row0 = sheet.getRow(0).getCell(0).getStringCellValue();
-		System.out.println(row0);
-
-		Object[][] data = new Object[rowCount][clmCount];
-		for (int r = 0; r < rowCount; r++) {
-			XSSFRow row = sheet.getRow(r + 1);
-
-			for (int c = 0; c < clmCount; c++) {
-				XSSFCell cell = row.getCell(c);
-
-				//System.out.println(row);
-				System.out.println(cell);
-
+		/*
+		 * String row0 = sheet.getRow(0).getCell(0).getStringCellValue(); //
+		 * System.out.println(row0);
+		 */
+		/*
+		 * Object[][] data = new Object[rowCount-1][clmCount]; for (int r = 1; r <
+		 * rowCount; r++) { XSSFRow row = sheet.getRow(r+1);
+		 * 
+		 * for (int c = 0; c < clmCount; c++) { XSSFCell cell = row.getCell(c);
+		 * 
+		 * // System.out.println(row); System.out.println(cell);
+		 * 
+		 * } }
+		 */
+		Object [][]ob=new Object[rowCount-1][clmCount];
+		
+		for(int i = 1;i<rowCount;i++)
+		{
+			for(int j=0;j<clmCount;j++)
+			{
+				ob[i-1][j]=sheet.getRow(i).getCell(j).toString();
+				
+				//System.out.print(sheet.getRow(i).getCell(j).toString());
 			}
+			System.out.println();
 		}
+		
+		System.out.println(ob[0][0]);
+		System.out.println(ob[0][1]);
+		
+
 	}
 }

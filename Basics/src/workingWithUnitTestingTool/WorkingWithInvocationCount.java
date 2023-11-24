@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class WorkingWithInvocationCount {
 
 	@Test(invocationCount = 1)
-	public void zun() {
+	public void run() {
 		System.out.println("i am rum");
 	}
 	//Same test case multiple and parallel time
@@ -20,8 +20,8 @@ public class WorkingWithInvocationCount {
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("http://omayo.blogspot.com/");
-		Thread.sleep(2000);
-		driver.quit();
+		//Thread.sleep(2000);
+		//driver.quit();
 	}
 }
 

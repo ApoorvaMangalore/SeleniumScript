@@ -10,7 +10,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
 public class RegisterForDemo {
 	//give parallel
 	@DataProvider()
@@ -20,7 +19,8 @@ public class RegisterForDemo {
 		int numOfRows = ref.getSheet("regdata").getPhysicalNumberOfRows();
 		int numOfCells = ref.getSheet("regdata").getRow(0).getPhysicalNumberOfCells();
 		String[][] data = new String[numOfRows][numOfCells];
-		
+		System.out.println(numOfRows);
+		System.out.println(numOfCells);
 		for(int i=0; i<numOfRows; i++) {
 			for(int j=0; j<numOfCells; j++) {
 				data[i][j] = ref.getSheet("regdata").getRow(i).getCell(j).toString();
@@ -28,7 +28,6 @@ public class RegisterForDemo {
 		}
 		return data;
 	}
-	
 	@Test(dataProvider = "registerData")
 	public void registerUser(String [] dataToReg) {
 		System.setProperty("webdriver.chrome.driver","./driver/chromedriver.exe");

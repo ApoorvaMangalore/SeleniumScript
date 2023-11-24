@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class TC_ferreroro_007 {
 	@Test(groups = "chocklet")
 	public void adhar() {
-		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.drive", "./driver/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		System.out.println("Empty browser has launched");
 		driver.manage().window().maximize();

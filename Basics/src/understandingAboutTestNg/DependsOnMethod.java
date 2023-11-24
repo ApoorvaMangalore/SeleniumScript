@@ -11,17 +11,17 @@ public class DependsOnMethod {
 		System.out.println("Login successful");
 	}
 
-	@Test(dependsOnMethods = "login")
+	@Test()
 	public void search() {
 		System.out.println("Search successful");
 	}
 
-	@Test(dependsOnMethods = "search")
+	@Test()
 	public void advanceSearch() {
 		System.out.println("Advanced Search successful");
 	}
 
-	@Test(dependsOnMethods = "advanceSearch")
+	@Test()
 	public void logout() {
 		System.out.println("Logout successful");
 	}
