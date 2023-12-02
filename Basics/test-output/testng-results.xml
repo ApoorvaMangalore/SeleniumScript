@@ -1,17 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-24T11:12:52 IST" name="Default suite" finished-at="2023-11-24T11:13:23 IST" duration-ms="31859">
+  <suite started-at="2023-11-29T00:04:12 IST" name="Suite" finished-at="2023-11-29T00:06:02 IST" duration-ms="109896">
     <groups>
+      <group name="chocklet">
+        <method signature="TC_cadbury_005.cadbury()[pri:0, instance:testScripts.TC_cadbury_005@1ed4ae0f]" name="cadbury" class="testScripts.TC_cadbury_005"/>
+        <method signature="TC_ferreroro_007.adhar()[pri:0, instance:testScripts.TC_ferreroro_007@20140db9]" name="adhar" class="testScripts.TC_ferreroro_007"/>
+        <method signature="TC_kitkat_006.kitkat()[pri:0, instance:testScripts.TC_kitkat_006@f0c8a99]" name="kitkat" class="testScripts.TC_kitkat_006"/>
+      </group> <!-- chocklet -->
+      <group name="govt">
+        <method signature="TC_adhar_001.adhar()[pri:0, instance:testScripts.TC_adhar_001@7526515b]" name="adhar" class="testScripts.TC_adhar_001"/>
+        <method signature="TC_bmtc_003.bmtc()[pri:0, instance:testScripts.TC_bmtc_003@740cae06]" name="bmtc" class="testScripts.TC_bmtc_003"/>
+        <method signature="TC_demoweb_004.demoweb()[pri:0, instance:testScripts.TC_demoweb_004@644baf4a]" name="demoweb" class="testScripts.TC_demoweb_004"/>
+        <method signature="TC_ksrtc_002.ksrtc()[pri:0, instance:testScripts.TC_ksrtc_002@26d9b808]" name="ksrtc" class="testScripts.TC_ksrtc_002"/>
+        <method signature="TC_testyantra_008.adhar()[pri:0, instance:testScripts.TC_testyantra_008@f78a47e]" name="adhar" class="testScripts.TC_testyantra_008"/>
+      </group> <!-- govt -->
     </groups>
-    <test started-at="2023-11-24T11:12:52 IST" name="Default test" finished-at="2023-11-24T11:13:23 IST" duration-ms="31859">
-      <class name="workingWithExtentReports.Simple">
-        <test-method signature="Test_case_1()[pri:0, instance:workingWithExtentReports.Simple@18df8434]" started-at="2023-11-24T11:12:52 IST" name="Test_case_1" finished-at="2023-11-24T11:13:23 IST" duration-ms="31767" status="PASS">
+    <test started-at="2023-11-29T00:04:12 IST" name="Test" finished-at="2023-11-29T00:06:02 IST" duration-ms="109896">
+      <class name="testScripts.TC_demoweb_004">
+        <test-method signature="demoweb()[pri:0, instance:testScripts.TC_demoweb_004@644baf4a]" started-at="2023-11-29T00:05:27 IST" name="demoweb" finished-at="2023-11-29T00:05:35 IST" duration-ms="8679" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test_case_1 -->
-      </class> <!-- workingWithExtentReports.Simple -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- demoweb -->
+      </class> <!-- testScripts.TC_demoweb_004 -->
+      <class name="testScripts.TC_ksrtc_002">
+        <test-method signature="ksrtc()[pri:0, instance:testScripts.TC_ksrtc_002@26d9b808]" started-at="2023-11-29T00:04:44 IST" name="ksrtc" finished-at="2023-11-29T00:04:58 IST" duration-ms="13629" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ksrtc -->
+      </class> <!-- testScripts.TC_ksrtc_002 -->
+      <class name="testScripts.TC_bmtc_003">
+        <test-method signature="bmtc()[pri:0, instance:testScripts.TC_bmtc_003@740cae06]" started-at="2023-11-29T00:04:25 IST" name="bmtc" finished-at="2023-11-29T00:04:44 IST" duration-ms="19675" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmtc -->
+      </class> <!-- testScripts.TC_bmtc_003 -->
+      <class name="testScripts.TC_ferreroro_007">
+        <test-method signature="adhar()[pri:0, instance:testScripts.TC_ferreroro_007@20140db9]" started-at="2023-11-29T00:04:12 IST" name="adhar" finished-at="2023-11-29T00:04:13 IST" duration-ms="65" status="FAIL">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
+at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
+at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at testScripts.TC_ferreroro_007.adhar(TC_ferreroro_007.java:11)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adhar -->
+      </class> <!-- testScripts.TC_ferreroro_007 -->
+      <class name="testScripts.TC_kitkat_006">
+        <test-method signature="kitkat()[pri:0, instance:testScripts.TC_kitkat_006@f0c8a99]" started-at="2023-11-29T00:04:13 IST" name="kitkat" finished-at="2023-11-29T00:04:25 IST" duration-ms="12218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- kitkat -->
+      </class> <!-- testScripts.TC_kitkat_006 -->
+      <class name="testScripts.TC_adhar_001">
+        <test-method signature="adhar()[pri:0, instance:testScripts.TC_adhar_001@7526515b]" started-at="2023-11-29T00:05:35 IST" name="adhar" finished-at="2023-11-29T00:05:39 IST" duration-ms="3837" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adhar -->
+      </class> <!-- testScripts.TC_adhar_001 -->
+      <class name="testScripts.TC_testyantra_008">
+        <test-method signature="adhar()[pri:0, instance:testScripts.TC_testyantra_008@f78a47e]" started-at="2023-11-29T00:04:58 IST" name="adhar" finished-at="2023-11-29T00:05:27 IST" duration-ms="28514" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adhar -->
+      </class> <!-- testScripts.TC_testyantra_008 -->
+      <class name="testScripts.TC_cadbury_005">
+        <test-method signature="cadbury()[pri:0, instance:testScripts.TC_cadbury_005@1ed4ae0f]" started-at="2023-11-29T00:05:39 IST" name="cadbury" finished-at="2023-11-29T00:06:02 IST" duration-ms="23133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cadbury -->
+      </class> <!-- testScripts.TC_cadbury_005 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

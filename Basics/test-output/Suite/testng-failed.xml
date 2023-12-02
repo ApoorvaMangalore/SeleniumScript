@@ -2,13 +2,12 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
-    <parameter name="browserName" value="chrome"/>
     <classes>
-      <class name="workingWithUnitTestingTool.Run">
+      <class name="testScripts.TC_ferreroro_007">
         <methods>
-          <include name="browser"/>
+          <include name="adhar"/>
         </methods>
-      </class> <!-- workingWithUnitTestingTool.Run -->
+      </class> <!-- testScripts.TC_ferreroro_007 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

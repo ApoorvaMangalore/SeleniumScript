@@ -9,8 +9,8 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 public class Simple {
-		@Test
-		public void Test_case_1() {
+	@Test
+	public void Test_case_1() {
 		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
