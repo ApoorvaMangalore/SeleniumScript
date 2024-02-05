@@ -3,7 +3,7 @@
 <suite name="Suite">
 	<test thread-count="5" name="Test">
 		<parameter name="browserName" value="firefox"></parameter>
-		<parameter name="url" value="https://demowebshop.tricentis.com/"></parameter>
+		<parameter name="url" value="https://www.amazon.in/"></parameter>
 		<classes>
 			<class name="workingWithUnitTestingTool.Run" />
 			</classes>

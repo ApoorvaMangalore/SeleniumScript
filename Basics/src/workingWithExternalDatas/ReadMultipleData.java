@@ -34,12 +34,12 @@ public class ReadMultipleData {
 		} else {
 			driver.findElement(By.id("gender-male")).click();
 		}
-		driver.findElement(By.id("FirstName")).sendKeys(workbook.getSheet("regdata").getRow(0).getCell(1).toString());
-		driver.findElement(By.id("LastName")).sendKeys(workbook.getSheet("regdata").getRow(0).getCell(2).toString());
-		driver.findElement(By.id("Email")).sendKeys(workbook.getSheet("regdata").getRow(0).getCell(3).toString());
-		driver.findElement(By.id("Password")).sendKeys(workbook.getSheet("regdata").getRow(0).getCell(4).toString());
+		driver.findElement(By.id("FirstName")).sendKeys(workbook.getSheet("regdata").getRow(1).getCell(1).toString());
+		driver.findElement(By.id("LastName")).sendKeys(workbook.getSheet("regdata").getRow(1).getCell(2).toString());
+		driver.findElement(By.id("Email")).sendKeys(workbook.getSheet("regdata").getRow(1).getCell(3).toString());
+		driver.findElement(By.id("Password")).sendKeys(workbook.getSheet("regdata").getRow(1).getCell(4).toString());
 		driver.findElement(By.id("ConfirmPassword"))
-				.sendKeys(workbook.getSheet("regdata").getRow(0).getCell(5).toString());
+				.sendKeys(workbook.getSheet("regdata").getRow(1).getCell(5).toString());
 		driver.findElement(By.id("register-button")).click();
 	}
 }

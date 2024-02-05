@@ -9,6 +9,7 @@ public class Headlessbrowsertest {
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
 		ChromeOptions option = new ChromeOptions();
+		
 		option.addArguments("--headless");
 		WebDriver driver = new ChromeDriver(option);
 		driver.manage().window().maximize();

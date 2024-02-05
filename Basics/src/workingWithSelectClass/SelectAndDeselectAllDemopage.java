@@ -1,6 +1,5 @@
 package workingWithSelectClass;
 
-
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -12,7 +11,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class SelectAndDeselectAllDemopage {
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdeiver.chrome.driver","./driver.chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
@@ -20,6 +19,7 @@ public class SelectAndDeselectAllDemopage {
 
 		WebElement multiSel = driver.findElement(By.id("multiselect1"));
 		Select select = new Select(multiSel);
+		System.out.println(select.isMultiple());
 
 		System.out.println(multiSel.getText());
 
@@ -29,13 +29,13 @@ public class SelectAndDeselectAllDemopage {
 		Thread.sleep(2000);
 		select.selectByIndex(2);
 		select.selectByIndex(3); //
-		select.deselectAll();
+		// select.deselectAll();
 
 		WebElement firstselect = select.getFirstSelectedOption();
 		System.out.println(firstselect);
 		System.out.println(firstselect.getText());
 
-		 List<WebElement> alloptions = select.getAllSelectedOptions();
+		List<WebElement> alloptions = select.getAllSelectedOptions();
 		System.out.println(alloptions);
 
 		for (WebElement option : alloptions) {

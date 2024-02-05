@@ -17,7 +17,7 @@ public class TogetTheTitleOfThePage {
 		driver.get("https://demowebshop.tricentis.com/");
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		
-		String title = (String)jse.executeScript(" return document.title");
+		String title =(String) jse.executeScript(" return document.title");
 		System.out.println(title);
 	
 		

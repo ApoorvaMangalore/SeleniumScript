@@ -33,7 +33,6 @@ public class FileUploadInDemoPage {
 		robot.keyPress(KeyEvent.VK_TAB);
 
 		robot.keyPress(KeyEvent.VK_ENTER);
-		
 
 		robot.keyRelease(KeyEvent.VK_A);
 		robot.keyRelease(KeyEvent.VK_TAB);

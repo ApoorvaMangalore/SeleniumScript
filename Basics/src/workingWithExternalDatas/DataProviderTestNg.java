@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class DataRead {
+public class DataProviderTestNg {
 	@DataProvider(parallel = true)
 	public String[][] sendData() throws EncryptedDocumentException, IOException {
 		FileInputStream fis = new FileInputStream("./testData/TestData.xlsx");

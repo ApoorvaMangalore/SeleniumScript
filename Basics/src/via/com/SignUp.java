@@ -13,6 +13,7 @@ public class SignUp {
 
 		ChromeOptions option = new ChromeOptions();
 		option.addArguments("--disable-notifications");
+		option.addArguments("--incognito");
 		WebDriver driver = new ChromeDriver(option);
 
 		System.out.println("Empty browser has launched");

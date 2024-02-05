@@ -19,7 +19,7 @@ public class Naukari {
 		driver.get("https://www.naukri.com/");
 		driver.findElement(By.id("register_Layer")).click();
 		driver.findElement(By.xpath("//button[text()='Upload Resume']")).click();
-		//Thread.sleep(2000);
+		Thread.sleep(2000);
 
 		robot.keyPress(KeyEvent.VK_A);
 		robot.keyPress(KeyEvent.VK_P);

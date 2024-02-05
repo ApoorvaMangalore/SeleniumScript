@@ -11,7 +11,7 @@ public class Assertion {
 	@Test
 	public void demo() {
 
-		SoftAssert softAssert = new SoftAssert();
+		//SoftAssert softAssert = new SoftAssert();
 		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -22,8 +22,8 @@ public class Assertion {
 
 		String url1 = driver.getCurrentUrl();
 		System.out.println(url1);
-		// Assert.assertEquals(url, url1,"url is not valid");
-		softAssert.assertEquals(url, url1, "test fail");
+		 Assert.assertEquals(url, url1,"url is not valid");
+		//softAssert.assertEquals(url, url1, "test fail");
 
 		driver.findElement(By.id("Email")).sendKeys("acm@123.com");
 		driver.findElement(By.id("Password")).sendKeys("12345");
@@ -32,7 +32,7 @@ public class Assertion {
 		driver.findElement(By.id("Email")).sendKeys("acm@123.com");
 		driver.findElement(By.name("send-email")).click();
 		driver.quit();
-		softAssert.assertAll();
+		//softAssert.assertAll();
 
 	}
 }

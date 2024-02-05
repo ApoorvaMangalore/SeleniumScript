@@ -6,7 +6,7 @@ public class WorkingWithPriorityattribute {
 	//defaul value is zero
 	final int a = 4;
 
-	@Test(priority = 4)
+	@Test(priority = a)
 	public void registration() {
 		System.out.println("i am registration");
 	}

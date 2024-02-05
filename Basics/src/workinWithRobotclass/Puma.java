@@ -14,10 +14,10 @@ public class Puma {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
-		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get("https://in.puma.com");
 		Robot robot = new Robot();
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 
 		robot.keyPress(KeyEvent.VK_TAB);
 		Thread.sleep(2000);

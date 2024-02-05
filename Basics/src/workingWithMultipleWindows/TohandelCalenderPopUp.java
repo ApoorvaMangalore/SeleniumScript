@@ -17,7 +17,7 @@ public class TohandelCalenderPopUp {
 		driver.manage().window().maximize();
 		
 		driver.get("https://in.via.com");
-		String date = "21";
+		String date = "2";
 		driver.findElement(By.id("departure")).click();
 		//driver.findElement(By.xpath("((//span[contains(@class,'vc-month-box-head')])[2]/../../..//div[text()='20'])[1]")).click();
 		WebElement dateText = driver.findElement(By.xpath("((//span[contains(@class,'vc-month-box-head')])[2]/../../..//div[text()='"+date+"'])[1]"));
@@ -25,6 +25,6 @@ public class TohandelCalenderPopUp {
 		
 		dateText.click();
 		Thread.sleep(6000);
-		driver.quit();
+		//driver.quit();
 	}
 }
