@@ -19,7 +19,7 @@ public class Simple {
 		driver.get("https://demowebshop.tricentis.com/");
 		List<WebElement> links = driver.findElements(By.tagName("img"));
 		System.out.println(links.size());
-		
+
 		for (WebElement link : links) {
 			String url = link.getAttribute("src");
 			System.out.println("=======================");

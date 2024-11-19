@@ -16,7 +16,7 @@ public class HiddenElements {
 		// driver.findElement(By.id("displayed-text")).sendKeys("apoorva");
 
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
-		jse.executeScript("document.getElementById,('displayed-text').value='apoorva';");
+		jse.executeScript("document.getElementById('displayed-text').value='apoorva';");
 
 	}
 

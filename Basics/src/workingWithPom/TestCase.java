@@ -13,5 +13,6 @@ public class TestCase extends BaseClass {
 		repo.getRegisterlink().click();
 		repo.getFemaleradioButton().click();
 		repo.getLastname().sendKeys("apoorva");
+		repo.getEmailTextBox().sendKeys("apoorva23@Gmail.com");
 	}
 }

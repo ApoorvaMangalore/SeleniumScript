@@ -22,31 +22,28 @@ public class AllWebElementMethods {
 		String tagname = firstname.getTagName();// gettagname
 		String attributeOfText = firstname.getAttribute("id");// getattribute
 		System.out.println(firstname.getAttribute("value"));
-		
-		System.out.println(firstname.getCssValue("color"));//get css value
-		Point getloc = firstname.getLocation();//getlocation
+
+		System.out.println(firstname.getCssValue("color"));// get css value
+		Point getloc = firstname.getLocation();// getlocation
 		System.out.println(getloc.getX());
 		System.out.println(getloc.getY());
-		
+
 		System.out.println(tagname);
 		System.out.println(attributeOfText);
 
 		driver.findElement(By.id("txtPassword")).sendKeys("apoorva!@#");
 		driver.findElement(By.id("btnLogin")).submit();// click& submit
 		WebElement spanmsg = driver.findElement(By.id("spanMessage"));
-		System.out.println(spanmsg.getText());//gettext
-		
+		System.out.println(spanmsg.getText());// gettext
+
 		System.out.println(firstname.getClass().getSimpleName());
-		
-		
-		
-		
-		
-		  WebElement loginbutton = driver.findElement(By.id("openIdLogin"));
-		  loginbutton.click(); System.out.println(loginbutton.isEnabled());//f
-		  System.out.println(loginbutton.isDisplayed());//t
-		  System.out.println(loginbutton.isSelected());//f
-		 
+
+		WebElement loginbutton = driver.findElement(By.id("openIdLogin"));
+		loginbutton.click();
+		System.out.println(loginbutton.isEnabled());// f
+		System.out.println(loginbutton.isDisplayed());// t
+		System.out.println(loginbutton.isSelected());// f
+
 	}
 
 }

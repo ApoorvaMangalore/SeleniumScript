@@ -22,8 +22,12 @@ public class RegRepo {
 	@FindBy(id = "FirstName")
 	private WebElement firstNameTb;
 
+	
 	@FindBy(id = "LastName")
 	private WebElement lastname;
+	
+	@FindBy(id = "Email")
+	private WebElement emailTextBox;
 
 	public WebElement getRegisterlink() {
 		return registerlink;
@@ -40,5 +44,12 @@ public class RegRepo {
 	public WebElement getLastname() {
 		return lastname;
 	}
+
+	public WebElement getEmailTextBox() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
 
 }
